@@ -1,0 +1,1 @@
+alert("Blazor, Hello World!");
