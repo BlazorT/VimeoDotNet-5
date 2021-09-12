@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VimeoDotNet5", "src\VimeoDotNet\VimeoDotNet5.csproj", "{90BFBB6A-05E5-4736-99B0-0C276581EF21}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VimeoDotNet.Tests", "src\VimeoDotNet.Tests\VimeoDotNet.Tests.csproj", "{52A87768-AEB5-4FD5-85EB-3941787816F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{73AA1237-F8FC-4333-A445-D8AA79BE30E2}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+		VimeoDotNet.nuspec = VimeoDotNet.nuspec
+		VimeoDotNet.snk = VimeoDotNet.snk
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90BFBB6A-05E5-4736-99B0-0C276581EF21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90BFBB6A-05E5-4736-99B0-0C276581EF21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90BFBB6A-05E5-4736-99B0-0C276581EF21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90BFBB6A-05E5-4736-99B0-0C276581EF21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52A87768-AEB5-4FD5-85EB-3941787816F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A87768-AEB5-4FD5-85EB-3941787816F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A87768-AEB5-4FD5-85EB-3941787816F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A87768-AEB5-4FD5-85EB-3941787816F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B195CDF-1535-46ED-8000-1D6AAF91328A}
+	EndGlobalSection
+EndGlobal

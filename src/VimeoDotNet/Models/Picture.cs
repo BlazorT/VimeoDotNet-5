@@ -1,0 +1,81 @@
+﻿using System.Collections.Generic;
+using JetBrains.Annotations;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+
+namespace VimeoDotNet.Models
+{
+    /// <summary>
+    /// The type of picture
+    /// </summary>
+    public enum PictureType
+    {
+        /// <summary>
+        /// The default image for the video.
+        /// </summary>
+        Default,
+        /// <summary>
+        /// An image that is appropriate for all ages.
+        /// </summary>
+        Caution,
+        /// <summary>
+        /// A custom image for the video.
+        /// </summary>
+        Custom
+    }
+
+    /// <summary>
+    /// Picture
+    /// </summary>
+    public class Picture
+    {
+        /// <summary>
+        /// Whether this picture is the active picture for its parent resource.
+        /// </summary>
+        [PublicAPI]
+       // [JsonPropertyName("active")]
+        [JsonPropertyName("active")]
+        public bool Active { get; set; }
+
+        /// <summary>
+        /// The picture's URI.
+        /// </summary>
+        [PublicAPI]
+        [JsonPropertyName("uri")]
+       // [JsonPropertyName("uri")]
+        public string Uri { get; set; }
+
+        /// <summary>
+        /// An array containing reference information about all available image files.
+        /// </summary>
+        [PublicAPI]
+        [JsonPropertyName("sizes")]
+       // [JsonPropertyName("sizes")]
+        public List<Size> Sizes { get; set; }
+
+        /// <summary>
+        /// The upload URL for the picture. This field appears when you create the picture resource for the first time.
+        /// </summary>
+        [PublicAPI]
+        [JsonPropertyName("link")]
+       // [JsonPropertyName("link")]
+        public string Link { get; set; }
+
+        ///
+        /// The picture's resource key string.
+        ///
+        [PublicAPI]
+        [JsonPropertyName("resource_key")]
+      //  [JsonPropertyName("resource_key")]
+        public string ResourceKey { get; set; }
+        
+        /// <summary>
+        /// The type of picture:
+        /// </summary>
+        [PublicAPI]
+      //  [JsonConverter(typeof(JsonStringEnumConverter), converterParameters:typeof(CamelCaseNamingStrategy))]
+       // [JsonPropertyName("type")]
+        [JsonPropertyName("type")]
+        public PictureType Type { get; set; }
+    }
+}
